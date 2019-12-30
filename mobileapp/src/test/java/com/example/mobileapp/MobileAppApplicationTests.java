@@ -8,6 +8,8 @@ class MobileAppApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
+		/*no test cases are written*/
 	}
 
 }
