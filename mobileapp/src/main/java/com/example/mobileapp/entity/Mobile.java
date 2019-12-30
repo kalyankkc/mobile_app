@@ -8,35 +8,50 @@ public class Mobile {
 	@Id
 	private int mobileId;
 	private String mobileName;
-	private int Price;
-	public int getMobileId() {
-		return mobileId;
+	private int price;
+	
+	public Mobile() {
+		super();
 	}
-	public void setMobileId(int mobileId) {
-		this.mobileId = mobileId;
-	}
-	public String getMobileName() {
-		return mobileName;
-	}
-	public void setMobileName(String mobileName) {
-		this.mobileName = mobileName;
-	}
-	public int getPrice() {
-		return Price;
-	}
-	public void setPrice(int price) {
-		Price = price;
-	}
+
 	public Mobile(int mobileId, String mobileName, int price) {
 		super();
 		this.mobileId = mobileId;
 		this.mobileName = mobileName;
-		Price = price;
+		this.price = price;
 	}
-	public Mobile() {
-		super();
-		// TODO Auto-generated constructor stub
+
+	public int getMobileId() {
+		return mobileId;
 	}
+
+	public void setMobileId(int mobileId) {
+		this.mobileId = mobileId;
+	}
+
+	public String getMobileName() {
+		return mobileName;
+	}
+
+	public void setMobileName(String mobileName) {
+		this.mobileName = mobileName;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Mobile [mobileId=" + mobileId + ", mobileName=" + mobileName + ", price=" + price + "]";
+	}
+	
+	
+
 	
 	
 
